@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { getColorHex } from '../../utils/colors/getColor';
+import { getColorHex } from 'utils/colors/getColor';
 
 const defaultProps = {
 	children: 'Default button',
 	color: 'midnight-blue',
-	bgColor: 'silver'
+	bgColor: 'clouds'
 };
 
 const Button = ({ icon, color, bgColor, children }) => {

@@ -1,8 +1,6 @@
-import './App.css';
-import Button from './components/Button';
 import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons';
-import Input from './components/Input';
-import Textarea from './components/Textarea';
+import './App.css';
+import { Button, Input, Textarea } from 'components/Form';
 
 function App() {
 	return (
@@ -11,22 +9,24 @@ function App() {
 			<h4>Buttons</h4>
 			<div>
 				<Button />
-				<Button icon={faCoffee} bgColor="wet-asphalt" color="emerald">
+				<Button icon={faCoffee} color="sun-flower" bgColor="wet-asphalt">
 					Coffe time!
 				</Button>
-				<Button icon={faBookmark} color="belize-hole">
+				<Button icon={faBookmark} color="wet-asphalt" bgColor="sun-flower">
 					Bookmark
 				</Button>
 			</div>
 			<h4>Inputs</h4>
 			<div>
 				<Input />
-				<Input color="emerald" bgColor="wet-asphalt" />
+				<Input color="sun-flower" bgColor="wet-asphalt" />
+				<Input color="sun-flower" bgColor="wet-asphalt" borderColor="asbestos" borderRadius={25} borderSize={5} />
 			</div>
 			<h4>Textareas</h4>
 			<div>
 				<Textarea />
-				<Textarea color="emerald" bgColor="wet-asphalt" />
+				<Textarea color="sun-flower" bgColor="wet-asphalt" />
+				<Textarea color="sun-flower" bgColor="wet-asphalt" borderColor="asbestos" borderRadius={25} borderSize={5} />
 			</div>
 		</div>
 	);
