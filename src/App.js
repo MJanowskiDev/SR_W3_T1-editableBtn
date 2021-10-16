@@ -1,10 +1,18 @@
 import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
-import { Button, Input, Textarea, Card } from 'components/Form';
+import { Button, Input, Textarea, Card, Menu, MenuLink } from 'components/Form';
 
 function App() {
 	return (
 		<div className="app">
+			<Menu>
+				<MenuLink to="/">Home</MenuLink>
+				<MenuLink to="/about">About</MenuLink>
+				<MenuLink to="/contact" isActive>
+					Contact
+				</MenuLink>
+				<MenuLink to="/posts">Posts</MenuLink>
+			</Menu>
 			<h1>FORM COMPONENTS</h1>
 			<h4>Buttons</h4>
 			<div>
