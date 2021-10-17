@@ -3,7 +3,7 @@ import { getColorHex } from 'utils/colors/getColor';
 
 const defaultProps = {
 	children: 'Default button',
-	color: 'midnight-blue',
+	color: 'wet-asphalt',
 	bgColor: 'clouds'
 };
 

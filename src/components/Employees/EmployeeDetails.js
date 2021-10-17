@@ -1,3 +1,5 @@
+import { getColorHex } from 'utils/colors/getColor';
+
 const styles = {
 	container: {
 		padding: 8,
@@ -5,7 +7,8 @@ const styles = {
 		width: '100%',
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		color: getColorHex('wet-asphalt')
 	},
 	field: {
 		height: '32px'

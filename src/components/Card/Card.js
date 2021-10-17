@@ -5,14 +5,15 @@ import CardIntro from './CardIntro';
 import CardContent from './CardContent';
 import { faChevronCircleDown, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const styles = {
 	card: {
 		maxWidth: 345,
 		height: 'auto',
 		borderRadius: 6,
 		border: '1px solid black',
-		background: getColorHex('clouds'),
-		color: getColorHex('midnight-blue'),
+		background: getColorHex('wet-asphalt'),
+		color: getColorHex('clouds'),
 		padding: 16,
 		margin: 8,
 		display: 'flex',
@@ -43,7 +44,7 @@ const Card = ({ title, intro, content, image }) => {
 				<div style={styles.chevron}>
 					<FontAwesomeIcon
 						onClick={() => setShowMore(!showMore)}
-						size="lg"
+						size='lg'
 						icon={showMore ? faChevronCircleUp : faChevronCircleDown}
 					/>
 				</div>

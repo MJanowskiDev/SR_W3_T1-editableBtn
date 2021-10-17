@@ -1,13 +1,16 @@
 import { getColorHex } from 'utils/colors/getColor';
+
 const styles = {
 	listDiv: {
 		overflowY: 'auto',
 		minWidth: 200,
-		padding: 8
+		padding: 8,
+		background: getColorHex('wet-asphalt')
 	},
 	item: {
 		listStyle: 'none',
-		padding: '20px 5px'
+		padding: '20px 5px',
+		color: getColorHex('clouds')
 	},
 	selectedItem: {
 		color: getColorHex('sun-flower'),
@@ -16,6 +19,7 @@ const styles = {
 		padding: '20px 5px'
 	}
 };
+
 const EmployeeList = ({ data, clicked, selectedId }) => {
 	return (
 		<div style={styles.listDiv}>
@@ -25,7 +29,7 @@ const EmployeeList = ({ data, clicked, selectedId }) => {
 					style={employee.id === selectedId ? styles.selectedItem : styles.item}
 					key={employee.id}
 				>
-					{employee.name} {employee.surname}
+					{employee.name}
 				</li>
 			))}
 		</div>

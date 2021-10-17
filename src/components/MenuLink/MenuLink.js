@@ -12,4 +12,5 @@ const MenuLink = ({ to, children, isActive }) => {
 		</a>
 	);
 };
+
 export default MenuLink;
