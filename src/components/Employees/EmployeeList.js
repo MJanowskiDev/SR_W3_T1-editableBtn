@@ -21,11 +21,14 @@ const styles = {
 };
 
 const EmployeeList = ({ data, clicked, selectedId }) => {
+	const onClickHandle = (employee) => {
+		clicked && clicked(employee);
+	};
 	return (
 		<div style={styles.listDiv}>
 			{data.map((employee) => (
 				<li
-					onClick={() => clicked && clicked(employee)}
+					onClick={() => onClickHandle(employee)}
 					style={employee.id === selectedId ? styles.selectedItem : styles.item}
 					key={employee.id}
 				>

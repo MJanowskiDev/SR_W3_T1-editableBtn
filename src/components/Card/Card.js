@@ -38,13 +38,13 @@ const Card = ({ title, intro, content, image }) => {
 	return (
 		<div style={styles.card}>
 			<CardHeader title={title} />
-			<img alt={`${title}`} style={styles.image} src={image} />
+			<img alt={title} style={styles.image} src={image} />
 			<CardIntro intro={intro} />
 			{content && (
 				<div style={styles.chevron}>
 					<FontAwesomeIcon
 						onClick={() => setShowMore(!showMore)}
-						size='lg'
+						size="lg"
 						icon={showMore ? faChevronCircleUp : faChevronCircleDown}
 					/>
 				</div>
